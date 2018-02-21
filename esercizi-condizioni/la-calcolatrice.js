@@ -14,3 +14,32 @@
   Utilizza il costrutto Switch-Case mediante acquisizione di caratteri.
   http://www.imparareaprogrammare.it
 */
+
+var a = 5;
+var b = 3;
+var op = 'potenza';
+var result;
+
+switch (op) {
+  case 'somma':
+  result=a+b;
+  break;
+  case 'sottrazione':
+  result=a-b;
+  break;
+  case 'moltiplicazione':
+  result=a*b;
+  break;
+  case 'divisione':
+  result=a/b;
+  break;
+  case 'modulo':
+  result=a%b;
+  break;
+  case 'potenza':
+  result=(a)**b;
+  break;
+  case 'media':
+  result=(a+b)/2;
+  break;
+}

@@ -6,3 +6,12 @@
   Non utilizzare array di appoggio per inversione.
   http://www.imparareaprogrammare.it
 */
+
+var N = 5;
+var serie = [];
+
+for (var i = 0; i < N; i++) {
+  serie[i] = Math.round(Math.random()*10);
+}
+console.log(serie);
+console.log(serie.reverse());

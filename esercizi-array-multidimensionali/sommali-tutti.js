@@ -23,6 +23,7 @@ var array = [];
 var somma = 0;
 
 for (var i = 0; i < N; i++) {
+array=[];
     for (var j = 0; j < M; j++) {
       array[j] = Math.ceil(Math.random()*100);
     }

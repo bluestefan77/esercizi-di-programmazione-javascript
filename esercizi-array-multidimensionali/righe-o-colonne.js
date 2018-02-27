@@ -31,6 +31,7 @@ var arrayR = [];
 var arrayC = [];
 
 for (var i = 0; i < N; i++) {
+array = [];
     for (var j = 0; j < M; j++) {
       array[j] = Math.ceil(Math.random()*100);
     }
@@ -39,6 +40,17 @@ for (var i = 0; i < N; i++) {
 console.log(matrice);
 
 for (var i = 0; i < N; i++) {
-  for (var j = 0; i < M; j++)
-    arrayC[i] += matrice [i];
+  arrayR[i] = 0;
+  for (var j = 0; j < M; j++) {
+  arrayR[i] += matrice[i][j];
 }
+}
+console.log('La somma delle righe è: ' + arrayR);
+
+for (var i = 0; i < M; i++) {
+  arrayC[i] = 0;
+  for (var j = 0; j < N; j++) {
+  arrayC[i] += matrice[j][i];
+}
+}
+console.log('La somma delle colonne è: ' + arrayC);

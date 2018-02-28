@@ -10,3 +10,9 @@
             0
   http://www.imparareaprogrammare.it
 */
+
+var input = 5;
+
+for (var i = input; i >= 0; i--) {
+  console.log(i + '\n');
+}

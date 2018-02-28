@@ -11,8 +11,8 @@
 */
 
 var A = 4;
-var B = 12;
-var N = 8;
+var B = 60;
+var N = Math.ceil(Math.random()*100);
 
 function distanzaNumerica(x,y,z) {
   var distanza = Math.abs(x-z);
@@ -26,5 +26,5 @@ function distanzaNumerica(x,y,z) {
   }
   return output;
 }
-
+console.log(A,B,N);
 console.log(distanzaNumerica(A,B,N));

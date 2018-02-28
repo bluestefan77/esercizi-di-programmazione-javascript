@@ -7,19 +7,12 @@
   http://www.imparareaprogrammare.it
 */
 
-function maggiore (x,y,z) {
-  if (x > y) {
-    var maggiore = x;
-  } else {
-    maggiore = y;
-  }
-
-  if (maggiore > z) {
-    maggiore = maggiore;
-  } else {
-    maggiore = z;
-  }
-  return maggiore;
+function max(numArray) {
+  return Math.max.apply(null, numArray);
 }
+console.log(max([1,2,3,4,8]));
 
-console.log(maggiore(8,5,7));
+function min(numArray) {
+  return Math.min.apply(null, numArray);
+}
+console.log(min([1,2,3,4,8]));

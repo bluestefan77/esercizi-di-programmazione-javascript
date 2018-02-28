@@ -7,3 +7,13 @@
             4
   http://www.imparareaprogrammare.it
 */
+
+var N = 125865;
+var K = 3;
+
+function cercaNumero (x,y){
+  var array = x.toString().split(''); //converto prima in numero e poi in array
+  return array[array.length-y];
+}
+
+console.log(cercaNumero(N,K));

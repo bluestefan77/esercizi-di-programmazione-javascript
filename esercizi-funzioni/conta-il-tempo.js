@@ -7,3 +7,12 @@
   Hint: puoi convertire il tipo di dato
   http://www.imparareaprogrammare.it
 */
+
+var input = 154287;
+
+function contaCifre(x) {
+  var string = input.toString();
+  return string.length;
+}
+
+console.log(contaCifre(input));

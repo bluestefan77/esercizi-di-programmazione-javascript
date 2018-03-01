@@ -8,3 +8,20 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var autoDellaStessaMarca = [];
+
+var garage = [
+    {marca: 'Audi', modello: 'A4' },
+    {marca: 'Audi', modello: 'A2' },
+    {marca: 'Fiat', modello: 'Bravo'},
+    {marca: 'Audi', modello: 'A3' }
+];
+
+for (var i=0; i < garage.length; i++) {
+    if (garage[i].marca == 'Audi') {
+      autoDellaStessaMarca[i] = garage[i].modello;
+  }
+}
+
+console.log(autoDellaStessaMarca.filter(function(e){return e}));

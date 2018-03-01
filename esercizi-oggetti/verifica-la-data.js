@@ -11,3 +11,15 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var data = {
+  giorno:31,
+  mese:5,
+  anno:2016
+}
+
+  if ((data.mese > 12) || (data.giorno > 31) || (data.mese ==2 && data.giorno >28) || ((data.mese == 4 || data.mese == 6 || data.mese == 9) && data.giorno > 30)) {
+    console.log('La data non è valida');
+  } else {
+  console.log(data);
+}

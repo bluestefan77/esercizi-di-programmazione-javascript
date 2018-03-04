@@ -27,3 +27,61 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var fascicoli = [];
+var guardie = [batman, superman];
+
+var batman = {
+  tipo: 'guardia',
+  nome: 'batman',
+  numero: '123456789',
+  indirizzo: 'pipiroad'
+}
+var superman = {
+  tipo: 'guardia',
+  nome: 'superman',
+  numero: '987654321',
+  indirizzo: 'superroad'
+}
+console.log(guardie);
+
+var detenuti = [bassotti, lupin];
+
+var bassotti = {
+  tipo: 'ladro',
+  nome: 'bassot',
+  crimine: 'furto',
+  dataCarcerazione: '01/01/2010',
+  dataScarcerazione: '02/03/2017'
+}
+var lupin = {
+  tipo: 'ladro',
+  nome: 'lupin',
+  crimine: 'truffa',
+  dataCarcerazione: '01/01/2012',
+  dataScarcerazione: '02/03/2019'
+}
+console.log(detenuti);
+
+function assumiGuardia (x) {
+  x.push({
+    tipo: 'guardia',
+    nome: 'spiderman',
+    numero: '987654321',
+    indirizzo: 'spiderroad'
+  })
+}
+assumiGuardia(guardie);
+console.log(guardie);
+
+function schedaCriminale (x) {
+  x.push({
+    tipo: 'ladro',
+    nome: 'lupin2',
+    crimine: 'truffa',
+    dataCarcerazione: '01/01/2012',
+    dataScarcerazione: '02/03/2019'
+  })
+}
+assumiGuardia(guardie);
+console.log(guardie);
